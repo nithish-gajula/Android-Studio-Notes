@@ -1,7 +1,6 @@
 # Android-Studio-Info
 
 
-
 #### Visual Studio Code Shortcuts Keys
 - To preview the `Readme.md` file in VSCode -> `Ctrl + Shift + V`
 - To format the json document in VSCode -> `Ctrl + K` then `Ctrl + F`
@@ -103,3 +102,12 @@ applicationId "com.nithishgajula.testingmarkdown"
 
 
 <font color='yellow'>**TODO**</font>
+
+
+## GitHub Commands
+### Merge
+- First, switch to master: `git checkout master`  
+- Pull latest changes (if working with remote): `git pull origin master`  
+- Merge your feature branch into master: `git merge update-to-targetSdk-35`  
+- If no conflicts, the commit completes automatically. Otherwise, resolve conflicts manually.
+- Push updated master to GitHub: `git push origin master`  
