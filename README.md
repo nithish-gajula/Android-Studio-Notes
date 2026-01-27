@@ -7,11 +7,42 @@
 - To format the json document in VSCode -> `Ctrl + K` then `Ctrl + F`
 - To format any document, install and then set the **Prettier** extension as the default formatter using `Ctrl + Shift + P`,  
   then format file -> `Shift + Alt + F`
+- To see difference between two files `code --diff file1.txt file2.txt` 
 
 #### Android Studio Shortcuts Keys
 - **Reformat** the code in Android Studio -> `Ctrl + Alt + L`
 - **Expand** all code blocks in Android Studio -> `Ctrl + Shift + +`
 - **Collapse** all code blocks in Android Studio -> `Ctrl + Shift + -`
+
+
+#### Emulator commands
+`adb emu kill`  
+`~/Android/Sdk/emulator/emulator -list-avds`  
+`~/Android/Sdk/emulator/emulator -avd Small_Phone`  
+`~/Android/Sdk/emulator/emulator -avd Medium_Phone_API_36.0`  
+`adb pair 192.168.1.99:44641`  
+`Enter pairing code`  
+`adb pair 192.168.1.99:44641`  
+
+
+###### To transfer files from desktop to android using termux app
+##### In Android:
+Download Termux App from Playstore  
+`pkg update`  
+`pkg install openssh`  
+`passwd` - to set a password for ssh  
+`sshd` - to start the ssh service  
+`ifconfig` (wlan0) - note the ip  
+`whoami` - to find the username  
+tmux port = 8022  
+`pwd` - to know the present working directory (termux home directory)  
+`mv ~/file.txt /sdcard/Download/`  
+
+##### In Linux Desktop :
+`ping 192.168.1.99` (Android mobile IP)  
+`scp -P 8022 /home/icps1101/Downloads/file.txt u0_a369@192.168.1.99:/data/data/com.termux/files/home/`  
+`scp -P 8022 /home/icps1101/Downloads/file2.txt u0_a369@192.168.1.99:/sdcard/Download/`  
+`ssh u0_a369@192.168.1.99 -p 8022`  
 
 #### Wireless Debugging Procedure :
 
