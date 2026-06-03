@@ -13,6 +13,10 @@
 - **Expand** all code blocks in Android Studio -> `Ctrl + Shift + +`
 - **Collapse** all code blocks in Android Studio -> `Ctrl + Shift + -`
 
+### Missing Vector Asset Icons
+- **Fix** it by deleting the **icons_metadata.txt** file
+- Goto Android Studio -> File -> Settings -> Search 'Android SDK' -> there you can see 'Android SDK Location', note it (Example path for Linux: /root/Android/Sdk)
+- Delete the icons_metadata.txt file from this path -> **/root/Android/Sdk/icons/material/icons_metadata.txt**
 
 #### Emulator commands
 `adb emu kill`  
