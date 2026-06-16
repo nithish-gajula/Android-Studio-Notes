@@ -52,9 +52,9 @@ tmux port = 8022
 - Connect Mobile to 'ICPS 3FL 5GHz' wifi
 - Make sure adb is installed on the desktop using the 'adb version' command
 - Developer Options -> Wireless Debugging -> Enable -> Pair device with pairing code -> Note the IP, Port, and Pairing Code (changes every time)
-- type command in desktop in *sudo* : adb pair <IP>:<Port>
+- type command in desktop in **sudo**, ===> `adb pair IP_ADDRESS:PORT`
 - It asks for a pairing code. Enter pairing code
-- If success, then type: adb connect <IP>:<Port>
+- If success, then type ===> `adb connect IP_ADDRESS:PORT`
 - adb devices, you can see the connected devices
 - Android Studio automatically detects it.
 
