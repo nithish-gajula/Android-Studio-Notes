@@ -115,3 +115,23 @@ applicationId "com.nithishgajula.testingmarkdown"
 - Merge your feature branch into master: `git merge update-to-targetSdk-35`  
 - If no conflicts, the commit completes automatically. Otherwise, resolve conflicts manually.
 - Push updated master to GitHub: `git push origin master`  
+
+
+## Password Reset Procedures
+### Windows
+If you forgot the Windows login password. You can reset the password without losing the data
+
+Be on the lock screen of Windows
+Hold down the Shift Key and go to power icon and click restart (keep holding the shiftkey until system restarts and directly go to the BIOS blue screen)
+There you go to the Troubleshoot > Advanced options > Command Prompt
+
+Type `C:`  
+Type `cd windows\system32`  
+Type `ren utilman.exe utilman.exe.bak` (This backs up the Accessibility icon utility)  
+Type `copy cmd.exe utilman.exe` (This replaces that icon with the Command prompt)  
+Type `wpeutil reboot` (This will restart the computer)  
+
+
+When you reach the Windows login screen, click the Accessibility icon to open the command prompt  
+Type `net user "USER_NAME" NEW_PASSWORD` (Here replace the USER_NAME with original username and NEW_PASSWORD with new password that you want to keep, minimum 4 digits)  
+Now close the command prompt and try to log-in with your new password.  
