@@ -135,3 +135,34 @@ Type `wpeutil reboot` (This will restart the computer)
 When you reach the Windows login screen, click the Accessibility icon to open the command prompt  
 Type `net user "USER_NAME" NEW_PASSWORD` (Here replace the USER_NAME with original username and NEW_PASSWORD with new password that you want to keep, minimum 4 digits)  
 Now close the command prompt and try to log-in with your new password.  
+
+
+
+# Play 2000's Nostalgia Games
+## Requirements
+- Java 8
+- Java Emulators like freeJ2ME or KEmulator
+- jar file of any game
+
+## Procedures
+Install java using `sudo apt update` `sudo apt install openjdk-8-jre`  
+Check you java version using `java --version`  
+It should show java 8. If not and showing 11/17/21 etc,. No problem we can still run the setup.  
+we are specific to java 8 here, because most of the old games developed on java 8.  
+
+Download the emulators zip files
+*freeJ2ME* - https://sourceforge.net/projects/freej2me/files  
+*KEmulator* - https://github.com/shinovon/KEmulator/releases/tag/v2.22  
+For better organization create a directory and uzip these emulators zip files in that. And create a games directory alongside them  
+Now download your game `.jar` file (example source sites: https://mobile.phoneky.com/games, )  
+Now place that downloaded game jar file to the games directory and run the below commands to open the game in emulator  
+
+### freej2ME:
+`cd ~/Desktop/FreeJ2ME/build/`
+`/usr/lib/jvm/java-8-openjdk-amd64/bin/java -jar freej2me.jar`
+This will open a user window to select the game jar file. select it and game will open.
+
+### KEmulator:
+`cd ~/Desktop/kemnnx64.v2.22/kemnnx64`
+`/usr/lib/jvm/java-8-openjdk-amd64/bin/java -jar KEmulator.jar`
+This will open a user window to select the game jar file. Select it and game will open
